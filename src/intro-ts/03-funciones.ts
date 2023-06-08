@@ -34,3 +34,21 @@ const nuevaMascota: Mascotas={
     }
 }
 datosMascota(nuevaMascota,4);
+
+const funcSuma = function (n1:number, n2:number):number{
+    return n1 + n2;
+}
+
+console.log(funcSuma(4,3));
+
+function sumar3(...valores:number[]){
+    let suma = 0
+    for(let x=0; x < valores.length; x++)
+    {
+        suma += valores[x];
+    }
+    return suma;
+}
+
+console.log(sumar3(10,2,3,4))
+console.log(sumar3(1,2))
